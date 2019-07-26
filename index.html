@@ -4,8 +4,9 @@
     <title>FRIENDS</title>
     <link rel="stylesheet" href="friends.css">
     <script src = "friend.js"></script>
+    <iframe width="0" height ="0" src ="friends_theme_song.mp3" allowfullscreen></iframe>
   </head>
-  <body>
+  <body onload = "typeWriter('Meet the Gang')">
     <center>
       <br>
       <div>
@@ -27,12 +28,17 @@
       </div>
       <br>
       <div>
+        <audio controls>
+          <source src = "friends_theme_song.mp3" type = "audio/mpeg">
+        </audio>
+      </div>
+      <div>
         <p>
           Friends is a sitcom running from 1994-2004. (Click on the banner)
         </P>
       </div>
       <br>
-      <h2> Meet the gang </h2>
+      <h1 id = "demo"> </h1>
       <div>
         <img alt = "An image of Monica Geller" onmouseover="imageEnlarge(this)" onmouseout = "imageShrink(this)" src="monica.jpg" height="250">
         <img alt = "An image of Rachel Green" onmouseover="imageEnlarge(this)" onmouseout = "imageShrink(this)" src="rachel.jpg" height="250">
@@ -47,7 +53,7 @@
       </div>
       <br>
       <div>
-        <h2> Hang out with them at their usual spots </h2>
+        <h1> Hang out with them at their usual spots </h1>
         <img src="apartment.jpg" height="250">
         <img src="kitchen.jpg" height="250">
         <img src="joeyapartment.jpg" height="250">
